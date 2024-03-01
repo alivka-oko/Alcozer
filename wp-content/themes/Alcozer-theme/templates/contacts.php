@@ -100,19 +100,26 @@ Template Name: Контакты
 <div class="container-fluid">
   <div class="row ">
     <div class="col-12">
-      <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A116c7919696849bf67a339de321355309ac1675eeefffe81b46528cc1f72543f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      <?php
+      foreach ($settings as $post) {
+        setup_postdata($post);
+        ?>
+        <?= CFS()->get('contacts_map') ?>
+        <?php
+      }
+      wp_reset_postdata();
+
+      ?>      
     </div>
   </div>
-</div>
 
-<!--====== FOOTER ONE PART START ======-->
+  <!--====== FOOTER ONE PART START ======-->
 
-<? get_footer() ?>
-
+  <? get_footer() ?>
 
 
 
-</body>
 
-</html>
+  </body>
+
+  </html>
