@@ -146,6 +146,42 @@ h6,
   line-height: 1.25;
 }
 
+@media (max-width: 540px) {
+
+  h1,
+  .h1 {
+    font-size: 2em;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.5em;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.4em;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  h5,
+  .h5 {
+    font-size: 1.25em;
+    line-height: 1.25;
+  }
+
+  h6,
+  .h6 {
+    font-size: 0.875em;
+    line-height: 1.25;
+  }
+}
+
 .display-1 {
   font-size: 5.5em;
   line-height: 1.25;
@@ -1774,8 +1810,7 @@ only screen and (min-width: 1400px) {
   background: linear-gradient(#542DED 0%, #9270F3 100%);
 }
 
-/* breadcrumbs from html*/
-.breadcrumbs {}
+/* breadcrumbs + product */
 
 .breadcrumbs-list {
   display: flex;
@@ -1784,10 +1819,6 @@ only screen and (min-width: 1400px) {
   gap: 10px;
   padding-left: 2px;
 }
-
-.breadcrumbs-item {}
-
-.breadcrumbs-devider {}
 
 .product-thumb-image div {
   max-width: 100px;
@@ -1810,8 +1841,6 @@ only screen and (min-width: 1400px) {
   max-height: 456px;
 }
 
-.breadcrumbs {}
-
 .breadcrumbs-list {
   display: flex;
   flex-direction: row;
@@ -1819,10 +1848,6 @@ only screen and (min-width: 1400px) {
   gap: 10px;
   padding-left: 2px;
 }
-
-.breadcrumbs-item {}
-
-.breadcrumbs-devider {}
 
 .product-thumb-image {
   display: flex;
